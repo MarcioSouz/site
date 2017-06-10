@@ -1,0 +1,79 @@
+#servicos{
+	> #servicos__itens{
+		> .servicos__item{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+			
+			cursor: pointer;
+			min-height: 150px;
+			background-color: #ccc;
+			background-clip: content-box;
+			margin-bottom: 30px;
+			> a{
+				display: block;
+				height: 150px;
+				width: 100%;
+				text-align: center;
+				position: relative;
+				> span.title{
+					color:#fff;
+					font: 26px $font_main;
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					bottom: 24px;
+					display: none;
+				}
+				&:hover > span.title{
+					display: block;
+				}
+				> span.icon{
+					display: inline-block;
+					position: relative;
+					transition: top 0.5s linear;
+					@extend .sprite_servicos;
+
+					&.icon--config{
+						@include sprite-define(70px, 70px, -5px, -129px);
+						top: (150px-70px)/2;
+					}
+					&.icon--camera{
+						@include sprite-define(70px, 52px, -5px, -5px);
+						top: (150px-52px)/2;
+					}
+					&.icon--image{
+						@include sprite-define(70px, 66px, -5px, -289px);
+						top: (150px-66px)/2;
+					}
+					&.icon--pc{
+						@include sprite-define(70px, 62px, -5px, -441px);
+						top: (150px-62px)/2;
+					}
+				}	
+				&:hover > span.icon{
+					top: 20px !important;
+					transition: top 0.5s linear;
+					&.icon--config{
+						@include sprite-define(70px, 70px, -5px, -208px);
+					}
+					&.icon--camera{
+						@include sprite-define(70px, 52px, -5px, -67px);
+					}
+					&.icon--image{
+						@include sprite-define(70px, 66px, -5px, -366px);
+					}
+					&.icon--pc{
+						@include sprite-define(70px, 62px, -5px, -513px);
+					}
+				}
+			}
+			&:hover{
+				background-color: $heading_tarja_color;
+			}
+			&, &:hover{
+				transition: all 0.5s linear;
+			}
+		}
+	}
+}
