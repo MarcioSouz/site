@@ -1,58 +1,66 @@
-a{
-	outline: none;
-	img{
-		border: none;
-	}
+a {
+    outline: none;
+    img {
+        border: none;
+    }
 }
 
-.content{
-	@include make-row;
+.content {
+    @include make-row;
 }
 
-.navegacao-fixa{
-	position: fixed;
-	top: 0;
-	z-index:999;
-	background:rgba(0, 152, 218, 1) !important;
-}
-.navegacao-fixa .navbar{
-	background: transparent !important;
+
+/* Barra de menu*/
+
+.navegacao-fixa {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: rgba(0, 152, 218, 1) !important;
 }
 
-.container{
-	.heading,
-	.widget > .widget__title{
-		margin: 0 0 30px;
-		font: bold 18px $font_main;
-		color: $heading_color;
-		position: relative;
-		line-height: 30px;
-		text-indent: 14px;
-		> span{
-			display: inline-block;
-			width: 8px;
-			height: 30px;
-			background: $heading_tarja_color;
-			position: absolute;
-			top: 0;
-			left: 15px;
-		}
-	}
-	.heading{
-		@include make-md-column(12);
-	}
-	.widget > .widget__title{
-		> span{
-			left: 0;
-		}
-	}
+.navegacao-fixa .navbar {
+    background: transparent !important;
 }
 
-.sprite_servicos{
-	background-image: url('../images/sprite-servicos.png');
-	background-repeat: no-repeat;
+.container {
+    .heading,
+    .widget>.widget__title {
+        margin: 0 0 30px;
+        font: bold 18px $font_main;
+        color: $heading_color;
+        position: relative;
+        line-height: 30px;
+        text-indent: 14px;
+        >span {
+            display: inline-block;
+            width: 8px;
+            height: 30px;
+            background: $heading_tarja_color;
+            position: absolute;
+            top: 0;
+            left: 15px;
+        }
+    }
+    .heading {
+        @include make-md-column(12);
+    }
+    .widget>.widget__title {
+        >span {
+            left: 0;
+        }
+    }
 }
-.sprite_redes_sociais{
-	background-image: url('../images/sprite-redes-sociais.png');
-	background-repeat: no-repeat;
+
+
+/* Imagens dos Boxes de Serviços e do Rodapé*/
+
+.sprite_servicos {
+    background-image: url('../images/sprite-servicos.png');
+    background-repeat: no-repeat;
+}
+
+.sprite_redes_sociais {
+    background-image: url('../images/sprite-redes-sociais.png');
+    background-repeat: no-repeat;
 }
