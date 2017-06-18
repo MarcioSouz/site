@@ -103,8 +103,7 @@ body > header {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 0%;
-    /* When the input field gets focus, change its width to 100% */ }
+    margin-left: 0%; }
     @media (min-width: 768px) {
       body > header > .content > .search-container {
         float: left;
@@ -125,19 +124,12 @@ body > header {
       color: #CCCCCC;
       margin-top: 7px;
       border: 1px solid #DDDDDD; }
-    body > header > .content > .search-container input[type=text] {
-      width: 130px;
-      -webkit-transition: width 0.4s ease-in-out;
-      transition: width 0.4s ease-in-out; }
-    body > header > .content > .search-container input[type=text]:focus {
-      width: 100%; }
 body > #navegacao {
   background: #0098DA;
   width: 100%; }
   body > #navegacao .navbar-default .navbar-toggle {
     border-color: #fff; }
-  body > #navegacao .navbar-toggle:hover,
-  body > #navegacao .navbar-toggle:focus {
+  body > #navegacao .navbar-toggle:hover, body > #navegacao .navbar-toggle:focus {
     background-color: #555; }
   body > #navegacao .icon-bar {
     background-color: #fff; }
@@ -327,7 +319,7 @@ body > #navegacao {
       text-decoration: none;
       transition: all 0.2s linear; }
 
-#blog #posts {
+#course #posts {
   position: relative;
   float: left;
   width: 100%;
@@ -343,25 +335,25 @@ body > #navegacao {
   padding-left: 15px;
   padding-right: 15px; }
   @media (min-width: 768px) {
-    #blog #posts {
+    #course #posts {
       float: left;
       width: 58.33333%; } }
   @media (min-width: 992px) {
-    #blog #posts {
+    #course #posts {
       float: left;
       width: 75%; } }
-  #blog #posts > .posts__item {
+  #course #posts > .posts__item {
     margin-bottom: 30px; }
-    #blog #posts > .posts__item > h2 {
+    #course #posts > .posts__item > h2 {
       font: 300 26px "Oxygen";
       color: #CC1F22;
       margin: 15px 0 5px; }
-    #blog #posts > .posts__item > p {
+    #course #posts > .posts__item > p {
       font: 300 16px "Oxygen";
       color: #878787;
       line-height: 1.5;
       margin-bottom: 15px; }
-    #blog #posts > .posts__item > a.read-more {
+    #course #posts > .posts__item > a.read-more {
       display: block;
       float: right;
       width: 140px;
@@ -370,6 +362,40 @@ body > #navegacao {
       text-align: center;
       font: 300 14px "Oxygen";
       color: #fff; }
+#course #sidebar {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    #course #sidebar {
+      float: left;
+      width: 41.66667%; } }
+  @media (min-width: 992px) {
+    #course #sidebar {
+      float: left;
+      width: 25%; } }
+  #course #sidebar > .widget > h3.widget__title {
+    font-size: 16px;
+    text-indent: 9px;
+    margin-bottom: 13px; }
+    #course #sidebar > .widget > h3.widget__title > span {
+      width: 4px; }
+  #course #sidebar > .widget > .widget__body {
+    width: 100%;
+    min-height: 220px;
+    background-color: #636363;
+    margin-bottom: 30px; }
 
 body > footer {
   background: #ddd;
@@ -390,8 +416,7 @@ body > footer {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
-    padding-right: 15px;
-    /* Informa├º├Áes de duvidas*/ }
+    padding-right: 15px; }
     @media (min-width: 768px) {
       body > footer #footer-sidebar > .footer-widget {
         float: left;
@@ -418,11 +443,10 @@ body > footer {
         background: #C72327; }
     body > footer #footer-sidebar > .footer-widget p {
       color: #777;
-      font: 14px "Oxygen"; }
+      font: bold 11px "Oxygen"; }
     body > footer #footer-sidebar > .footer-widget > ul#fotos {
       list-style: none;
-      padding: 0;
-      /*Estilo das frases de Duvidas e contatos*/ }
+      padding: 0; }
       body > footer #footer-sidebar > .footer-widget > ul#fotos > li {
         float: left;
         display: inline;
@@ -430,18 +454,12 @@ body > footer {
         margin: 0 5% 5% 0; }
         body > footer #footer-sidebar > .footer-widget > ul#fotos > li:nth-child(3n) {
           margin-right: 0; }
-      body > footer #footer-sidebar > .footer-widget > ul#fotos a {
-        color: #777;
-        text-decoration: none; }
-    body > footer #footer-sidebar > .footer-widget.footer-widget--about {
-      /* Sobre a Empresa */ }
-      body > footer #footer-sidebar > .footer-widget.footer-widget--about a {
-        display: block;
-        width: 60%; }
-      body > footer #footer-sidebar > .footer-widget.footer-widget--about p {
-        width: 75%;
-        margin: 20px 0 0;
-        font: 14px "Oxygen"; }
+    body > footer #footer-sidebar > .footer-widget.footer-widget--about a {
+      display: block;
+      width: 60%; }
+    body > footer #footer-sidebar > .footer-widget.footer-widget--about p {
+      width: 75%;
+      margin: 20px 0 0; }
   body > footer > #redes-sociais {
     background: #555;
     padding: 10px 0; }
@@ -449,8 +467,7 @@ body > footer {
       position: relative;
       min-height: 1px;
       padding-left: 15px;
-      padding-right: 15px;
-      /*CORPYGHT*/ }
+      padding-right: 15px; }
       @media (min-width: 992px) {
         body > footer > #redes-sociais #redes-sociais__container {
           float: left;
@@ -491,11 +508,10 @@ body > footer {
                 background-position: -5px -257px; }
         body > footer > #redes-sociais #redes-sociais__container > ul#redes-sociais__icons > :last-child {
           margin-right: 0; }
-      body > footer > #redes-sociais #redes-sociais__container P {
-        color: #fbfbfb;
+      body > footer > #redes-sociais #redes-sociais__container p {
+        color: #ffffff;
         text-align: center;
-        padding: 15px;
-        font: 12px "Oxygen"; }
+        font-family: "Oxygen"; }
 
 body > #modalContato {
   font: bold 14px "Oxygen"; }
@@ -514,27 +530,12 @@ body > #modalContato {
   body > #modalContato > .modal-dialog > .modal-content > .modal-footer > .btn {
     outline: 0; }
     body > #modalContato > .modal-dialog > .modal-content > .modal-footer > .btn.btn-primary {
-      background: #0098DA; }
+      background: #0098DA;
+      border-color: #0098DA; }
       body > #modalContato > .modal-dialog > .modal-content > .modal-footer > .btn.btn-primary:hover {
         background: #555; }
 
-body > form {
-  width: 45%;
-  position: absolute;
-  left: 38%;
-  top: 110%;
-  margin-left: -120px;
-  margin-top: -45px;
-  font-family: "Oxygen"; }
-  body > form > h1 {
-    text-align: center;
-    font-family: "Oxygen"; }
-
-/*footer {
-        width: 100%;
-        position: absolute;
-        left: center;
-        top: 180%;
-    }*/
+body h1 {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
