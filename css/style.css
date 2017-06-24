@@ -535,7 +535,25 @@ body > #modalContato {
       body > #modalContato > .modal-dialog > .modal-content > .modal-footer > .btn.btn-primary:hover {
         background: #555; }
 
-body h1 {
+body {
+  padding: 0;
+  margin: 0; }
+  body h1 {
+    text-align: center; }
+
+.meu_form {
+  font-family: "Oxygen";
+  font-size: 15px; }
+
+h1 {
   text-align: center; }
+
+textarea {
+  width: 200px;
+  padding: 10px;
+  margin-left: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid; }
 
 /*# sourceMappingURL=style.css.map */
